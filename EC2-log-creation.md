@@ -1,4 +1,4 @@
-Create logs for [jupyter log analysis](EC2-jupyter-log-analysis.md)
+## Create logs for [jupyter log analysis](EC2-jupyter-log-analysis.md)
 * In EC2 root directory, create a bash script with `touch create_log.sh`
 * Edit the file (I use `nano create_log.sh`) and add paste the following:
 ```bash
