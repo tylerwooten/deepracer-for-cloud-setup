@@ -1,10 +1,10 @@
-Setting up Jupyter notebook log analysis:
+## Setting up Jupyter notebook log analysis:
 * Run “dr-start-loganalysis” on ec2
 * Copy the URL that it outputs and replace the ip with your ec2’s ip: “http://ubuntu@{IP HERE}.compute-1.amazonaws.com:8888/lab?”
 * Paste the url above into your local machine’s internet browser
 * May prompt you to log in — paste the token that is at the end of the Url from your ec2
 
-Running log analysis:
+## Running log analysis:
 * After creating the logs with the [log creation bash script](EC2-log-creation.md)
 * Open and run Training_analysis.ipynb
 * Add the following at the end of the file for detailed analysis on how your model is performing:
