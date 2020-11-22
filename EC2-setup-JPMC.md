@@ -1,4 +1,4 @@
-##### Setting up EC2 for DRFC
+###### Setting up EC2 for DRFC
 
 ## FINDING YOUR VPC:
 
@@ -27,6 +27,10 @@ Create the following configurations:
  ![GitHub Logo](/images/inbound.png)
 
  ![GitHub Logo](/images/outbound.png)
+ 
+* Add the following tag to make sure the security group rules are not automatically deleted
+
+ ![GitHub Logo](/images/auto_delete.png)
 
 ## CREATING EC2:
 
