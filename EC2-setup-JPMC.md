@@ -9,6 +9,12 @@ From AWS Console, navigate to “VPC”. Once there select “Your VPCs” and f
 Save this vpc name and Network ACL name for later.
 Click the network ACL and add an inbound rule for ALL traffic on “your IP”/32
 
+ ![GitHub Logo](/images/inbound.png)
+
+Also add an outbound TCP rule for the following:
+
+ ![GitHub Logo](/images/upload_tcp.png)
+
 ## CREATING SECURITY GROUP:
 
 From the AWS Console, navigate to “EC2”. Once there, select “Security Groups” on the left hand panel and then  “Create security group”
