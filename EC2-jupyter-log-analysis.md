@@ -5,7 +5,7 @@ Setting up Jupyter notebook log analysis:
 * May prompt you to log in — paste the token that is at the end of the Url from your ec2
 
 Running log analysis:
-* After creating the logs with the [log creation bash script](EC2-log-creation)
+* After creating the logs with the [log creation bash script](EC2-log-creation.md)
 * Open and run Training_analysis.ipynb
 * Add the following at the end of the file for detailed analysis on how your model is performing:
 
