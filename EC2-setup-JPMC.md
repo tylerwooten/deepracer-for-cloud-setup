@@ -14,10 +14,9 @@ Click the network ACL and add an inbound rule for ALL traffic on “your IP”/3
 From the AWS Console, navigate to “EC2”. Once there, select “Security Groups” on the left hand panel and then  “Create security group”
 
 Create the following configurations:
-•	Vpc is the same as your default vac
-•	Add inbound rule to allow all traffic for “your IP”/32
-•	Add the same outbound rules as below
-
+*	Vpc is the same as your default vac
+*	Add inbound rule to allow all traffic for “your IP”/32
+*	Add the same outbound rules as below
  
  ![GitHub Logo](/images/inbound.png)
 
@@ -31,12 +30,12 @@ Navigate to EC2 from AWS Console and select “Instances” from the left side p
 
 Click “Launch Instances” and set up the EC2 with the following:
 
-•	Server type: 18.04 ubuntu
-•	Instance type: G4dn.4xlarge  (allows 3 workers. Can also try g4dn.2xlarge or other GPU accelerated instances)
-•	IAM Role: AmazonSSMRoleForInstancesQuickSetup
-•	Key pair: create and save this in a safe location
-•	Security Group: The same name as what you made in earlier section on setting up security group
-•	Storage: 40GB to root volume
+*	Server type: 18.04 ubuntu
+*	Instance type: G4dn.4xlarge  (allows 3 workers. Can also try g4dn.2xlarge or other GPU accelerated instances)
+*	IAM Role: AmazonSSMRoleForInstancesQuickSetup
+*	Key pair: create and save this in a safe location
+*	Security Group: The same name as what you made in earlier section on setting up security group
+*	Storage: 40GB to root volume
 
 ## CONNECTING TO EC2:
 
@@ -50,3 +49,9 @@ On the connect screen, copy the command and paste into any client that is able t
  
 If you are able to get in, congratulations! Now run the drfc setup here: https://larsll.github.io/deepracer-for-cloud/installation.html
 If you are unable to connect, please contact Tyler Wooten in Slack https://app.slack.com/client/T01D8BNK3M4/C01DKU2FWMU or through email tyler.wooten@jpmchase.com
+
+**TROUBLESHOOTING:**
+*If you can't connect:*
+* Ensure Security group outbound is open to all
+* Assign IAM role to the group
+
