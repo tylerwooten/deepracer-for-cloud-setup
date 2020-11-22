@@ -36,13 +36,13 @@ Create the following configurations:
 
 Navigate to EC2 from AWS Console and select “Instances” from the left side panel
 
- ![GitHub Logo](/images/instance.png)
+ ![GitHub Logo](/images/instances.png)
 
 Click “Launch Instances” and set up the EC2 with the following:
 
 *	Server type: 18.04 ubuntu
 *	Instance type: G4dn.4xlarge  (allows 3 workers. Can also try g4dn.2xlarge or other GPU accelerated instances)
-*	IAM Role: AmazonSSMRoleForInstancesQuickSetup
+*	IAM Role: Select any role that has AmazonS3FullAccess (you can check that on IAM console > roles > role name > attach policy "AmazonS3FullAccess")
 *	Key pair: create and save this in a safe location
 *	Security Group: The same name as what you made in earlier section on setting up security group
 *	Storage: 40GB to root volume
