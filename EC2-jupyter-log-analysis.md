@@ -8,6 +8,12 @@
 * After creating the logs with the [log creation bash script](EC2-log-creation.md)
 * Open and run Training_analysis.ipynb
 * Add the following at the end of the file for detailed analysis on how your model is performing:
+```
+lastTenPercentLaps = simulation_agg.tail( round( len(simulation_agg) * 0.1 ) )
+lastTenPercentCompleted = lastTenPercentLaps[lastTenPercentLaps['progress']==100]
+firstTenPercentLaps = simulation_agg.head( round( len(simulation_agg) * 0.1 ) )
+firstTenPercentCompleted = firstTenPercentLaps[firstTenPercentLaps['progress']==100]
+```
 
 ```python
 import numpy as np
