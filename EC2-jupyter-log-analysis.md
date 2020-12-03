@@ -7,7 +7,7 @@
 ## Running log analysis:
 * After creating the logs with the [log creation bash script](EC2-log-creation.md)
 * Open and run Training_analysis.ipynb
-* Add the following at the end of the file for detailed analysis on how your model is performing:
+* Either download [this .ipynb file](Training_analysis_updated.ipynb) and upload it to your Jupyter Notebook instance, or add the following at the end of the file for detailed analysis on how your model is performing:
 ```python
 all_completed_laps = big_complete_ones[big_complete_ones['time']<200]
 all_laps = big_simulation_agg
