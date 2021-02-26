@@ -1,6 +1,6 @@
 # JPMC DeepRacer For Cloud Setup
 
-The main purpose of this repo is to document how I was able to set up an EC2 instance through a JPMC sandbox and train model for the AWS DeepRacer competitions. I utilized the [LarsLL deepracer for cloud github repo](https://github.com/aws-deepracer-community/deepracer-for-cloud) for training. By training on EC2 instances, my team and I have been able to win in the Houston Races, JPMC Global Races, Global Financial Services Races, and we made it to top 8 racers in the world at AWS reInvent 2020.
+The main purpose of this repo is to document how I was able to set up an EC2 instance through a JPMC sandbox and train model for the AWS DeepRacer competitions. I utilized the [LarsLL deepracer for cloud github repo](https://aws-deepracer-community.github.io/deepracer-for-cloud/) for training. By training on EC2 instances, my team and I have been able to win in the Houston Races, JPMC Global Races, Global Financial Services Races, and we made it to top 8 racers in the world at AWS reInvent 2020.
 
 Training on an EC2 has many advantages:
 * Being able to set up a customized action space
