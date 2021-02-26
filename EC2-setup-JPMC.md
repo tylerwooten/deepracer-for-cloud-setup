@@ -62,6 +62,7 @@ If you are unable to connect, please contact Tyler Wooten in Slack https://app.s
 
 **TROUBLESHOOTING:**
 *If you can't connect:*
-* Ensure Security group outbound is open to all
+* Ensure Security group outbound is open to all and inbound rule is open to your IP
+* Ensure your EC2's VPC ACL inbound rules is open for all traffic to your IP
 * Assign IAM role to the group
 
