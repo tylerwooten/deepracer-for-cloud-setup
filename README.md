@@ -16,3 +16,4 @@ If you have any issues getting stuck please reach out to Tyler Wooten in slack (
 Other useful links:
 * Track names for DR_WORLD_NAME: https://github.com/aws-deepracer-community/deepracer-simapp/tree/master/bundle/deepracer_simulation_environment/share/deepracer_simulation_environment/routes
 * Racing types (head to head, time trial, object avoidance) for DR_RACE_TYPE: https://aws-deepracer-community.github.io/deepracer-for-cloud/reference.html
+* Pull new sagemaker/robomaker docker images: https://github.com/aws-deepracer-community/deepracer-simapp
