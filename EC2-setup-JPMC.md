@@ -57,7 +57,7 @@ On the connect screen, copy the command and paste into any client that is able t
 
  ![GitHub Logo](/images/connect.png)
  
-If you are able to get in, congratulations! Now run the drfc setup here: https://larsll.github.io/deepracer-for-cloud/installation.html
+If you are able to get in, congratulations! Now run the drfc setup here:https://aws-deepracer-community.github.io/deepracer-for-cloud/
 If you are unable to connect, please contact Tyler Wooten in Slack https://app.slack.com/client/T01D8BNK3M4/C01DKU2FWMU or through email tyler.wooten@jpmchase.com
 
 **TROUBLESHOOTING:**
