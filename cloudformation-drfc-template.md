@@ -34,6 +34,8 @@ EC2_STACK_NAME = the name of your stack. This can be whatever you want
 
 
 Access your EC2 instance using SSM from EC2 console page and follow “First Run” on this page https://aws-deepracer-community.github.io/deepracer-for-cloud/installation.html 
+After you have your EC2 instance set up, when you are done training you should "stop" your instance and not "terminate" it. You will have to run "CREATE STANDARD EC2 INSTANCE" again if you terminate your instance. You will not be charge the hourly rate for a stopped instance.
 
 If you don’t have “dr-…” commands, run ./bin/prepare.sh
+
 
