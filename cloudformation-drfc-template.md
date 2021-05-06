@@ -2,7 +2,7 @@
 To easily set up all of the correct JPMC resources at one time (VPC connection, allowlisting your machines IP, EFS (Elastic File System) setup, etc. ), Esa Laine has created a cloudformation stack that lets you complete the entire setup in one command.  Download the correct files here:
 https://github.com/EsaLaine/deepracer-templates
 
-Relevant files:
+## Relevant files:
 - create-base-resources.sh
 - base-resources.yaml
 - create-instance.sh
@@ -12,7 +12,8 @@ Relevant files:
 
 After downloading these files, launch AWS CloudShell in your AWS console.
 
-BASE RESOURCES SETUP (only need to run this once per account/machine accessing EC2 instance):
+# BASE RESOURCES SETUP:
+(only need to run this once per account/machine accessing EC2 instance)
 - Actions > Upload file
 - upload create-base-resources.sh and upload base-resources.yaml
 - Run “bash create-base-resources.sh BASE_STACK_NAME YOUR_MACHINES_IP RULE_NUMBER”
@@ -22,7 +23,8 @@ RULE_NUMBER = pick a random 4 digit number that does not collide with your VPC A
 
 
 
-CREATE STANDARD EC2 INSTANCE (run this to create a fresh EC2 instance):
+# CREATE STANDARD EC2 INSTANCE:
+(run this to create a fresh EC2 instance)
 - from AWS Cloudshell
 - Actions > Upload file
 - Upload standard-instance.yaml and create-standard-instance.sh
