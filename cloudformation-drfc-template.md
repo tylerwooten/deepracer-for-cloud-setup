@@ -34,11 +34,11 @@ export EC2_STACK_NAME=drfcEC2Stack
 
 # BASE RESOURCES SETUP:
 (only need to run this once per account/machine accessing EC2 instance)
-- Run ```bash create-base-resources.sh BASE_STACK_NAME YOUR_MACHINES_IP RULE_NUMBER```
+- Run ```bash create-base-resources.sh $BASE_STACK_NAME $YOUR_MACHINES_IP $RULE_NUMBER```
 
 
 # CREATE STANDARD EC2 INSTANCE:
-- Run ```bash create-standard-instance.sh BASE_STACK_NAME EC2_STACK_NAME```
+- Run ```bash create-standard-instance.sh $BASE_STACK_NAME $EC2_STACK_NAME```
 
 
 Access your EC2 instance using SSM from EC2 console page and follow “First Run” on this page https://aws-deepracer-community.github.io/deepracer-for-cloud/installation.html 
