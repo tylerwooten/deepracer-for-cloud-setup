@@ -40,6 +40,7 @@ export EC2_STACK_NAME=drfcEC2Stack
 # CREATE STANDARD EC2 INSTANCE:
 - Run ```bash create-standard-instance.sh $BASE_STACK_NAME $EC2_STACK_NAME```
 
+you can go to "Cloudformation" to watch the progress of your stack creation and see if any errors occurred in the "Events" tab.
 
 Access your EC2 instance using SSM from EC2 console page and follow “First Run” on this page https://aws-deepracer-community.github.io/deepracer-for-cloud/installation.html 
 After you have your EC2 instance set up, when you are done training you should "stop" your instance and not "terminate" it. You will have to run "CREATE STANDARD EC2 INSTANCE" again if you terminate your instance. You will not be charge the hourly rate for a stopped instance.
