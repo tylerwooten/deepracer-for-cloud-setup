@@ -18,10 +18,10 @@ After downloading the files, from your AWS Sandbox launch "CloudShell" and uploa
 
 # Set environment variables:
 Set the following variables up:  \n
-BASE_STACK_NAME = the name of your base stack containing only letters, numbers, and dashes  \n
-YOUR_MACHINES_IP = the IPV4 of the machine you are using to access the ec2 instance (https://whatismyip.host/)   \n
-RULE_NUMBER = pick a random 4 digit number that does not collide with your VPC ACL's rule numbers  \n
-EC2_STACK_NAME = the name of your base stack containing only letters, numbers, and dashes  \n
+BASE_STACK_NAME = the name of your base stack containing only letters, numbers, and dashes  
+YOUR_MACHINES_IP = the IPV4 of the machine you are using to access the ec2 instance (https://whatismyip.host/)   
+RULE_NUMBER = pick a random 4 digit number that does not collide with your VPC ACL's rule numbers  
+EC2_STACK_NAME = the name of your base stack containing only letters, numbers, and dashes  
 
 EXAMPLE:
 ```
