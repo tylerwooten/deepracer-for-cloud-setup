@@ -18,7 +18,7 @@ After downloading the files, from your AWS Sandbox launch "CloudShell" and uploa
 
 # Set environment variables:
 Set the following variables up:  
-BASE_STACK_NAME = the name of your base stack containing only letters, numbers, and dashes  
+BASE_STACK_NAME = the name of your base stack containing only letters & numbers  
 YOUR_MACHINES_IP = the IPV4 of the machine you are using to access the ec2 instance (https://whatismyip.host/)   
 RULE_NUMBER = pick a random 4 digit number that does not collide with your VPC ACL's rule numbers  
 EC2_STACK_NAME = the name of your base stack containing only letters, numbers, and dashes  
@@ -42,9 +42,11 @@ export EC2_STACK_NAME=drfcEC2Stack
 
 you can go to "Cloudformation" to watch the progress of your stack creation and see if any errors occurred in the "Events" tab.
 
-Access your EC2 instance using SSM from EC2 console page and follow “First Run” on this page https://aws-deepracer-community.github.io/deepracer-for-cloud/installation.html 
+# First Run:
+- Access your EC2 instance using SSM from EC2 console page
+- run ```bash``` to enter bash shell prompt
+- run ```source bin/activate.sh```
+- setup s3 bucket in system.env (e.g. DR_LOCAL_S3_BUCKET = drfcbasestackdmh1-bucket-111111)
+- follow “First Run” on this page https://aws-deepracer-community.github.io/deepracer-for-cloud/installation.html 
 After you have your EC2 instance set up, when you are done training you should "stop" your instance and not "terminate" it. You will have to run "CREATE STANDARD EC2 INSTANCE" again if you terminate your instance. You will not be charge the hourly rate for a stopped instance.
-
-If you don’t have “dr-…” commands, run ./bin/prepare.sh
-
 
