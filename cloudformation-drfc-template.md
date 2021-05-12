@@ -44,9 +44,12 @@ you can go to "Cloudformation" to watch the progress of your stack creation and 
 
 # First Run:
 - Access your EC2 instance using SSM from EC2 console page
-- run ```bash``` to enter bash shell prompt
-- run ```source bin/activate.sh```
-- setup s3 bucket in system.env (e.g. DR_LOCAL_S3_BUCKET = drfcbasestackdmh1-bucket-111111)
+- run ```sudo su ubuntu``` to switch users
+- run ```bin/bash``` to enter bash shell prompt
+- run ```source bin/activate.sh``` to get access to dr-commands
+- run ```cd /home/ubuntu/deepracer-for-cloud``` to navigate to the deepracer directory
+- setup s3 bucket in system.env and run.env (e.g. DR_LOCAL_S3_BUCKET=drfcbasestackdmh1-bucket-111111, DR_UPLOAD_S3_BUCKET=drfcbasestackdmh1-bucket-111111/upload)
 - follow “First Run” on this page https://aws-deepracer-community.github.io/deepracer-for-cloud/installation.html 
+
 After you have your EC2 instance set up, when you are done training you should "stop" your instance and not "terminate" it. You will have to run "CREATE STANDARD EC2 INSTANCE" again if you terminate your instance. You will not be charge the hourly rate for a stopped instance.
 
