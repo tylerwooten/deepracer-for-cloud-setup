@@ -38,6 +38,7 @@ export EC2_STACK_NAME=drfcEC2Stack
 
 
 # CREATE STANDARD EC2 INSTANCE:
+NOTE: This will create an EC2 instance and charge your sandbox $1.20/hr while the ec2 instance is in a "running" state. Always be sure to stop your instance when you are done training. 
 - Run ```bash create-standard-instance.sh $BASE_STACK_NAME $EC2_STACK_NAME```
 
 you can go to "Cloudformation" to watch the progress of your stack creation and see if any errors occurred in the "Events" tab.
@@ -45,9 +46,9 @@ you can go to "Cloudformation" to watch the progress of your stack creation and 
 # First Run:
 - Access your EC2 instance using SSM from EC2 console page
 - run ```sudo su ubuntu``` to switch users
-- run ```bin/bash``` to enter bash shell prompt
-- run ```source bin/activate.sh``` to get access to dr-commands
+- run ```/bin/bash``` to enter bash shell prompt
 - run ```cd /home/ubuntu/deepracer-for-cloud``` to navigate to the deepracer directory
+- run ```source bin/activate.sh``` to get access to dr-commands
 - setup s3 bucket in system.env and run.env (e.g. DR_LOCAL_S3_BUCKET=drfcbasestackdmh1-bucket-111111, DR_UPLOAD_S3_BUCKET=drfcbasestackdmh1-bucket-111111/upload)
 - follow “First Run” on this page https://aws-deepracer-community.github.io/deepracer-for-cloud/installation.html 
 
