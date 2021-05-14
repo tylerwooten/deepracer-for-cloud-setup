@@ -21,7 +21,7 @@ Login to your AWS Sandbox and launch "CloudShell" to upload those 5 files:
 
 Continue with the following steps in the same CloudShell terminal session...
 
-# Set environment variables
+# Set Environment Variables
 Setup the following variables:
 - BASE_STACK_NAME = the name of your base stack containing only letters & numbers  
 - YOUR_MACHINES_IP = the IPV4 of the machine you are using to access the ec2 instance (https://whatismyip.host/)   
