@@ -64,9 +64,43 @@ source bin/activate.sh
 - Click on the orange "Connect" button
 - This should open a Linux shell terminal within your browser
 
+# Initial Setup of DRFC
+
+Use your SSM terminal session to setup DRFC (DeepRacer-For-Cloud) as follows. These are once-only steps.
+
+## Download Latest Tracks
+It is currently necessary to download a newer version of the Community code in order to train on the latest (May 2021) tracks.
+
+Use the following command to download the newer Docker image:
+````docker pull awsdeepracercommunity/deepracer-robomaker:4.0.3-gpu````
+
+Then configure DRFC to use it by editing the file **system.env**, changing the setting of $DR_ROBOMAKER_IMAGE as follows:
+````DR_ROBOMAKER_IMAGE=4.0.3-gpu````
+
+Finally tell DRFC to use the new configuration:
+````dr-update````
+
+## Configure S3 Local Storage Bucket
+The DRFC requires an S3 bucket to store model artefacts.
+The bucket has been created automatically by CloudFormation, but you need to configure DRFC so it knows the name of the new bucket.
+
+The following command will list names of all your S3 buckets, you should be able to easily see the new one that was created by CloudFormation.
+````aws s3 ls````
+
+A typical example name is "drfcbasestackdmh1-bucket-v7oab14trnd0".
+
+Configure DRFC to use it by editing the file **system.env**, changing the setting of $DR_LOCAL_S3_BUCKET as follows:
+````DR_LOCAL_S3_BUCKET=drfcbasestackdmh1-bucket-v7oab14trnd0````
+
+TODO - instructions for upload too, e.. ````DR_UPLOAD_S3_BUCKET=drfcbasestackdmh1-bucket-111111/upload```` - optional to be ready for a first run
+
+Tell DRFC to use the new configuration:
+````dr-update````
+
 # First Run
-- setup s3 bucket in system.env and run.env (e.g. DR_LOCAL_S3_BUCKET=drfcbasestackdmh1-bucket-111111, DR_UPLOAD_S3_BUCKET=drfcbasestackdmh1-bucket-111111/upload)
-- follow “First Run” on this page https://aws-deepracer-community.github.io/deepracer-for-cloud/installation.html 
+You are now ready to train your first model!
+
+Follow “First Run” on this page https://aws-deepracer-community.github.io/deepracer-for-cloud/installation.html 
 
 After you have your EC2 instance set up, when you are done training you should "stop" your instance and not "terminate" it. You will have to run "CREATE STANDARD EC2 INSTANCE" again if you terminate your instance. You will not be charge the hourly rate for a stopped instance.
 
