@@ -97,7 +97,8 @@ TODO - instructions for upload too, e.. ````DR_UPLOAD_S3_BUCKET=drfcbasestackdmh
 Tell DRFC to use the new configuration:
 ````dr-update````
 
-# First Run (MORE NOTES COMING SOON TO REFLECT RECENT VIDEO SETUP)
+# First Run 
+(MORE NOTES COMING SOON TO REFLECT RECENT VIDEO SETUP)
 You are now ready to train your first model!
 
 Follow “First Run” on this page https://aws-deepracer-community.github.io/deepracer-for-cloud/installation.html 
