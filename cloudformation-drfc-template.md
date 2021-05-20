@@ -57,12 +57,15 @@ Obtain Linux command shell access to your running EC2 instance using SSM from EC
 - **First time only** Click on the "Preferences" link in the help text, then "Edit" to add the following commands to your "Linux Shell Profile":
 ````
 sudo su ubuntu
+/bin/bash
 cd /home/ubuntu/deepracer-for-cloud
 source bin/activate.sh
 ````
 - **Optional** The default idle session timeout is 20 minutes which can be annoying. If you wish, increase it to 60 mins in the "general preferences" section
 - Click on the orange "Connect" button
 - This should open a Linux shell terminal within your browser
+
+If you see: "The version of SSM Agent on this instance doesn't support shell profile". You need to wait 10-15 minutes for the initial install of DRFC and EC2 setup to complete.
 
 # Initial Setup of DRFC
 
