@@ -108,3 +108,5 @@ Follow “First Run” on this page https://aws-deepracer-community.github.io/de
 
 After you have your EC2 instance set up, when you are done training you should "stop" your instance and not "terminate" it. You will have to run "CREATE STANDARD EC2 INSTANCE" again if you terminate your instance. You will not be charge the hourly rate for a stopped instance.
 
+To reduce costs of watching the stream of you car, you can specify the quality and size of the window at the end of the url:
+http://ec2ip.125.125.125.125:8080/stream_viewer?topic=/racecar/deepracer/kvs_stream&quality=10&width=400&height=300
