@@ -58,7 +58,7 @@ Obtain Linux command shell access to your running EC2 instance using SSM from EC
 ````
 sudo su ubuntu
 /bin/bash
-cd /home/ubuntu/deepracer-for-cloud
+cd /home/ubuntu/efs/deepracer-for-cloud
 source bin/activate.sh
 ````
 - **Optional** The default idle session timeout is 20 minutes which can be annoying. If you wish, increase it to 60 mins in the "general preferences" section
