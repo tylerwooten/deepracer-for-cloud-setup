@@ -8,7 +8,7 @@ https://github.com/EsaLaine/deepracer-templates
 Download the zip folder and extract only the following relevant files:
 - create-base-resources.sh
 - base-resources.yaml
-- create-instance.sh
+- create-standard-instance.sh
 - standard-instance.yaml 
 - create-standard-instance.sh
 
