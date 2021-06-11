@@ -75,10 +75,10 @@ Use your SSM terminal session to setup DRFC (DeepRacer-For-Cloud) as follows. Th
 It is currently necessary to download a newer version of the Community code in order to train on the latest (May 2021) tracks.
 
 Use the following command to download the newer Docker image:
-````docker pull awsdeepracercommunity/deepracer-robomaker:4.0.3-gpu````
+````docker pull awsdeepracercommunity/deepracer-robomaker:4.0.5-gpu````
 
 Then configure DRFC to use it by editing the file **system.env**, changing the setting of $DR_ROBOMAKER_IMAGE as follows:
-````DR_ROBOMAKER_IMAGE=4.0.3-gpu````
+````DR_ROBOMAKER_IMAGE=4.0.5-gpu````
 
 Finally tell DRFC to use the new configuration:
 ````dr-update````
