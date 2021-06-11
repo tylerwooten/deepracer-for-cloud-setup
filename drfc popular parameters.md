@@ -25,7 +25,7 @@ sensor =  _one or more of..._
 
 action_space_type =
 * **discrete**
-* **continuous**     TBC.........
+* **continuous**
 
 version =
 * **3**  
