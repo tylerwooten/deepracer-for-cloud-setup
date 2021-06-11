@@ -21,15 +21,15 @@ DR_ROBOMAKER_IMAGE =
 sensor =  _one or more of..._
 * **FRONT_FACING_CAMERA**
 * **STEREO_CAMERAS**
-* **LIDAR**
+* **SECTOR_LIDAR**
 
 action_space_type =
 * **discrete**
 * **continuous**     TBC.........
 
 version =
-* **3**
-* **4**
+* **3**  
+* **4** (you must use version 4 for best results competing in AWS virtual races)
 
 
 # Master Reference
