@@ -21,7 +21,7 @@ DR_ROBOMAKER_IMAGE =
 sensor =  _one or more of..._
 * **FRONT_FACING_CAMERA**
 * **STEREO_CAMERAS**
-* **LIDAR**     TBC....
+* **LIDAR**
 
 action_space_type =
 * **discrete**
@@ -29,7 +29,7 @@ action_space_type =
 
 version =
 * **3**
-* **4**     TBC...........
+* **4**
 
 
 # Master Reference
