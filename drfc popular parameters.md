@@ -16,6 +16,20 @@ DR_RACE_TYPE =
 DR_ROBOMAKER_IMAGE =
 * **4.0.5-gpu**       (latest build number comes from: https://github.com/aws-deepracer-community/deepracer-simapp/releases)
 
+# model_metadata.json
+
+sensor =  _one or more of..._
+* **FRONT_FACING_CAMERA**
+* **STEREO_CAMERAS**
+* **LIDAR**     TBC....
+
+action_space_type =
+* **discrete**
+* **continuous**     TBC.........
+
+version =
+* **3**
+* **4**     TBC...........
 
 
 # Master Reference
