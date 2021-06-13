@@ -32,7 +32,7 @@ version =
 * **4** (you must use version 4 for best results competing in AWS virtual races)
 
 action_space =    (use this format for continuous, or refer to default for discrete format)
-* {"steering_angles": {"high": 30, "low": -30}, "speed": {"high": 4, "low": 1}}
+* {"steering_angle": {"high": 30, "low": -30}, "speed": {"high": 4, "low": 1}}
 
 
 # Master Reference
